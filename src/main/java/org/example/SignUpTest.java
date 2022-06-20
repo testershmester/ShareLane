@@ -46,7 +46,6 @@ public class SignUpTest {
         WebElement errorMessage = driver.findElement(By.className("error_message"));
         assertTrue(errorMessage.isDisplayed(), "Error message is not displayed in case of empty zip code");
         assertEquals(errorMessage.getText(), ZIP_CODE_ERROR, "Error message should be correct");
-
     }
 
     @Test
